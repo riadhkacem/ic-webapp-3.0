@@ -6,7 +6,7 @@ services:
         networks:
             - ic_network
         environment:
-            - 'PGADMIN_DEFAULT_EMAIL=odoo@eazytraining.fr'
+            - 'PGADMIN_DEFAULT_EMAIL=riadhkacem@msn.com'
             - 'PGADMIN_DEFAULT_PASSWORD=odoo_pgadmin_password'
         ports:
             - "5050:80"

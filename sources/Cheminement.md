@@ -12,7 +12,7 @@ Ce petit tuto explique progressivement  comment mettre en oeuvre le prpojet fil 
 - APP_EXPOSED_PORT : **8000**
 - IMAGE_NAME : **ic-webapp**
 - IMAGE_TAG : **v1.0**
-- DOCKERHUB_ID : **choco1992**
+- DOCKERHUB_ID : **riadhkacem**
 - DOCKERFILE_NAME : **Dockerfile_v1.0**
 
 #### Creation d'un répertoire de travail
@@ -32,7 +32,7 @@ Prendre [celui ci](https://github.com/diranetafen/cursus-devops/tree/master/vagr
 - Lancer Minikube avec **minikube start --driver=none**
 
 #### Une fois minikube OK, télécharger les sources dans la VM minikube (cette VM contient déja docker installé)
->             git clone https://github.com/choco1992/ic-webapp.git
+>             git clone https://github.com/riadhkacem/ic-webapp-3.0.git
 >             cd ic-webapp
 #### Lancer le build de l'image et tester le fonctionnement du conteneur :
 >             docker build --no-cache -f ./sources/app/${DOCKERFILE_NAME} -t $IMAGE_NAME:$IMAGE_TAG ./sources/app
