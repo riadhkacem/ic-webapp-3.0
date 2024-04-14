@@ -1,17 +1,12 @@
-variable "aws_region" {
-  default = "us-east-1"
-  type    = string
-}
-
 provider "aws" {
-  region = var.aws_region
+  region = "us-east-1"
 }
 
 terraform {
   backend "s3" {
     bucket = "terraform-backend-riadh"
     key    = "riadh-dev.tfstate"
-    region = var.aws_region
+    region = "us-east-1"
   }
 }
 
